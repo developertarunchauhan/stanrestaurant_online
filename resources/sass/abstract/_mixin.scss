@@ -1,0 +1,34 @@
+/**
+Mixins are like functions
+
+@mixin bd-radius($value,$color){
+    border: $value solid $color
+}
+**/
+
+@mixin main-font {
+    font-family: "Open Sans", sans-serif;
+}
+
+@mixin second-font {
+    font-family: 'Dancing Script', cursive;
+}
+
+@mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
+    display: inline-block;
+    padding: $pad1 $pad2;
+    background-color: $col1;
+    color: $col2;
+    border-radius: $bRadius;
+    transition: all 0.3s;
+    border: none;
+
+    &:hover {
+        background-color: darken($color: $col1, $amount: 15);
+    }
+}
+
+a {
+    @include hero_btn($primary_1, $white, 10px, 45px, 45px);
+    margin-top: 10px;
+}
