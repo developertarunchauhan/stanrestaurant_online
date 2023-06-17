@@ -28,7 +28,7 @@ Mixins are like functions
     }
 }
 
-a {
+.btn {
     @include hero_btn($primary_1, $white, 10px, 45px, 45px);
     margin-top: 10px;
 }

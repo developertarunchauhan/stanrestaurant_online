@@ -1,12 +1,11 @@
-// Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
-
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
 // Abstract
 @import 'abstract/variables';
-@import 'abstract/mixin';
+
+// Mixins
+@import 'mixins/mixin';
 
 // Base
 @import 'base/typography';
