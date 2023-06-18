@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Role;
 use Illuminate\Http\Request;
-use DataTables;
+use Yajra\DataTables\DataTables;
 
 class RoleController extends Controller
 {
@@ -38,7 +38,7 @@ class RoleController extends Controller
                 ->addColumn('action', function ($row) {
 
                     $btn = '<div class="btn-group">
-                                <a href="javascript:void(0)" class="edit btn btn-outline-primary btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a href="role/edit/" class="edit btn btn-outline-primary btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
                                 <a href="javascript:void(0)" class="delete btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a>
                             </div>';
 
